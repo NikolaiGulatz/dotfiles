@@ -1,5 +1,7 @@
 Currently running Arch on a Thinkpad X1 Carbon 6th Gen.
 
+![Imgur Image](https://i.imgur.com/EbmcSIP.jpg)
+
 # Dependencies
 
 - i3-gaps
