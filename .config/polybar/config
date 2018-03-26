@@ -1,0 +1,129 @@
+[colors]
+background = #1a1a1a
+background-alt = #1d1f21
+foreground = #dddddd
+foreground-alt = #dddddd
+primary = #2ecc71
+secondary = #f1c40f
+alert = #e67e22
+
+[bar/bar]
+
+font-0 = "Roboto:pixelsize=12;2"
+font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=13;1"
+font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=13;1"
+font-3 = "Font Awesome 5 Brands:pixelsize=13;1"
+
+monitor = ${env:MONITOR:eDP-1}
+
+fixed-center = true
+
+width = 100%
+height = 35
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+radius = 0.0
+
+padding-left = 3
+padding-right = 3
+module-margin-left = 3
+module-margin-right = 3
+
+modules-left = i3
+modules-center = title
+modules-right = gitlab wifi date battery
+
+[module/gitlab]
+type = custom/script
+interval = 180
+exec = ~/.config/polybar/scripts/gitlab.py
+format-prefix="    "
+format-prefix-foreground = ${colors.primary}
+click-left = exec firefox https://gitlab.com
+label = %output%
+
+[module/i3]
+strip-wsnumbers = true
+type = internal/i3
+format = <label-state> <label-mode>
+
+label-focused = %index%
+label-focused-foreground = ${colors.background}
+label-focused-background = ${colors.primary}
+label-focused-padding = 2
+
+label-unfocused = %index%
+label-unfocused-padding = 2
+
+label-visible = %index%
+label-visible-underline = #555555
+label-visible-padding = 2
+
+label-urgent = %index%
+label-urgent-foreground = ${colors.alert}
+label-urgent-background = #bd2c40
+label-urgent-padding = 2
+
+[module/battery]
+type = internal/battery
+
+time-format = %H:%M
+
+format-charging = <animation-charging> <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
+
+label-charging = "  %percentage%%"
+label-discharging = "  %percentage%%"
+
+label-full-foreground = ${colors.primary}
+ramp-capacity-foreground = ${colors.primary}
+animation-charging-foreground = ${colors.primary}
+
+label-full = "  "
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+bar-capacity-width = 10
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+
+animation-charging-framerate = 750
+
+[module/wifi]
+type = internal/network
+interface = wlp2s0
+interval = 5.0
+format-connected = <label-connected>
+format-connected-prefix="    "
+format-connected-prefix-foreground = ${colors.primary}
+label-connected = "%essid%"
+format-disconnected = <label-disconnected>
+label-disconnected = ""
+
+[module/memory]
+type = internal/memory
+interval = 2.5
+label = MEM %gb_used%
+
+[module/date]
+type = internal/date
+interval = 1.0
+format-prefix="    "
+format-prefix-foreground = ${colors.primary}
+date = "%d.%m. %H:%M"
+
+[module/title]
+type = internal/xwindow
+format-foreground = ${colors.foreground}
+format-padding = 1
+label-maxlen = 50

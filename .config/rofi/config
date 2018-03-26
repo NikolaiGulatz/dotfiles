@@ -1,0 +1,26 @@
+!#======================================================================
+!# Rofi
+!#======================================================================
+
+rofi.location:          0
+rofi.color-enabled:     true
+
+! State:                'bg',   'border','separator'
+rofi.color-window:      #2ecc71, #2ecc71, #2ecc71
+
+! State:                'bg',      'fg',   'bgalt', 'hlbg',    'hlfg'
+rofi.color-normal:      #2ecc72, #ecf0f1, #2ecc72, #00070e14, #1a1a1a
+rofi.color-active:      #2ecc72, #ecf0f1, #2ecc72, #00070e14, #1a1a1a
+rofi.color-urgent:      #2ecc72, #ecf0f1, #2ecc72, #00070e14, #1a1a1a
+rofi.separator-style:   solid
+rofi.fullscreen:        false
+rofi.padding:           20
+rofi.lines:             5
+rofi.hide-scrollbar:    true
+rofi.line-margin:       0
+rofi.fake-transparency: true
+rofi.yoffset:           0
+rofi.xoffset:           0
+rofi.width:             600
+rofi.opacity:           100
+rofi.font:              Roboto 14

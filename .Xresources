@@ -1,0 +1,68 @@
+!#======================================================================
+!# Colors
+!#======================================================================
+
+! special
+*.foreground:   #ecf0f1
+*.background:   #1a1a1a
+*.cursorColor:  #dfdfdf
+
+! black
+*.color0:       #1a1a1a
+*.color8:       #1a1a1a
+
+! red
+*.color1:       #e74c3c
+*.color9:       #e74c3c
+
+! green
+*.color2:       #2ecc71
+*.color10:      #2ecc71
+
+! yellow
+*.color3:       #f1c40f
+*.color11:      #f1c40f
+
+! blue
+*.color4:       #3498db
+*.color12:      #3498db
+
+! magenta
+*.color5:       #e67e22
+*.color13:      #e67e22
+
+! cyan
+*.color6:       #e67e22
+*.color14:      #e67e22
+
+! white
+*.color7:       #ffffff
+*.color15:      #ffffff
+
+!#======================================================================
+!# Global
+!#======================================================================
+
+*.font: xft:Fira Code:size=10:antialias=true
+
+!#======================================================================
+!# (U)Xterm
+!#======================================================================
+
+XTerm.vt100.faceName: Fira Code:size=12:antialias=true
+XTerm.vt100.selectToClipboard: true
+XTerm.VT100.translations: #override \n\
+  Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+  Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+
+!#======================================================================
+!# Xft
+!#======================================================================
+
+Xft.dpi:                92
+Xft.antialias:          True
+Xft.hinting:            True
+Xft.rgba:               rgb
+Xft.autohint:           False
+Xft.hintstyle:          hintslight
+Xft.lcdfilter:          lcddefault
