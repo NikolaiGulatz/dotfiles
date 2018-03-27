@@ -1,6 +1,6 @@
 Currently running Arch on a Thinkpad X1 Carbon 6th Gen.
 
-![Imgur Image](https://i.imgur.com/EbmcSIP.jpg)
+![Imgur Image](https://i.imgur.com/4D64rop.jpg)
 
 # Dependencies
 
