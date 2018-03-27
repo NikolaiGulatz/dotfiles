@@ -9,31 +9,34 @@ alert = #e67e22
 
 [bar/bar]
 
-font-0 = "Roboto:pixelsize=12;2"
-font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=13;1"
-font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=13;1"
-font-3 = "Font Awesome 5 Brands:pixelsize=13;1"
+font-0 = "Roboto:pixelsize=11;2"
+font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=12;1"
+font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=12;1"
+font-3 = "Font Awesome 5 Brands:pixelsize=12;1"
 
 monitor = ${env:MONITOR:eDP-1}
 
 fixed-center = true
 
 width = 100%
-height = 35
+height = 30
+radius = 4.0
 
 background = ${colors.background}
 foreground = ${colors.foreground}
-
-radius = 0.0
 
 padding-left = 3
 padding-right = 3
 module-margin-left = 3
 module-margin-right = 3
 
+border-top-size = 10
+border-left-size = 10
+border-right-size = 10
+
 modules-left = i3
 modules-center = title
-modules-right = gitlab wifi date battery
+modules-right = gitlab memory wifi date battery
 
 [module/gitlab]
 type = custom/script
@@ -113,7 +116,10 @@ label-disconnected = ""
 [module/memory]
 type = internal/memory
 interval = 2.5
-label = MEM %gb_used%
+format-prefix = "    "
+format-prefix-foreground = ${colors.primary}
+format = <label>
+label = %gb_used%
 
 [module/date]
 type = internal/date
