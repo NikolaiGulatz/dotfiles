@@ -9,10 +9,10 @@ alert = #e67e22
 
 [bar/bar]
 
-font-0 = "Roboto:pixelsize=11;2"
-font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=12;1"
-font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=12;1"
-font-3 = "Font Awesome 5 Brands:pixelsize=12;1"
+font-0 = "Roboto:pixelsize=11;1"
+font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=11;1"
+font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=11;1"
+font-3 = "Font Awesome 5 Brands:pixelsize=11;1"
 
 monitor = ${env:MONITOR:eDP-1}
 
@@ -26,9 +26,9 @@ background = ${colors.background}
 foreground = ${colors.foreground}
 
 padding-left = 3
-padding-right = 3
-module-margin-left = 3
-module-margin-right = 3
+padding-right = 10
+module-margin-left = 6
+module-margin-right = 6
 
 border-top-size = 10
 border-left-size = 10
@@ -55,19 +55,19 @@ format = <label-state> <label-mode>
 label-focused = %index%
 label-focused-foreground = ${colors.background}
 label-focused-background = ${colors.primary}
-label-focused-padding = 2
+label-focused-padding = 5
 
 label-unfocused = %index%
-label-unfocused-padding = 2
+label-unfocused-padding = 5
 
 label-visible = %index%
 label-visible-underline = #555555
-label-visible-padding = 2
+label-visible-padding = 5
 
 label-urgent = %index%
 label-urgent-foreground = ${colors.alert}
 label-urgent-background = #bd2c40
-label-urgent-padding = 2
+label-urgent-padding = 5
 
 [module/battery]
 type = internal/battery
