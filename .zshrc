@@ -12,7 +12,7 @@ antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle command-not-found
 
-antigen theme gentoo
+antigen theme agnoster
 
 antigen apply
 
