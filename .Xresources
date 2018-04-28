@@ -2,42 +2,36 @@
 !# Colors
 !#======================================================================
 
-! special
-*.foreground:   #ecf0f1
-*.background:   #1a1a1a
-*.cursorColor:  #dfdfdf
+*.foreground:  #d6dbe5
+*.background:  #131313
+*.cursorColor: #b9b9b9
 
-! black
-*.color0:       #1a1a1a
-*.color8:       #1a1a1a
-
-! red
-*.color1:       #e74c3c
-*.color9:       #e74c3c
-
-! green
-*.color2:       #2ecc71
-*.color10:      #2ecc71
-
-! yellow
-*.color3:       #f1c40f
-*.color11:      #f1c40f
-
-! blue
-*.color4:       #3498db
-*.color12:      #3498db
-
-! magenta
-*.color5:       #e67e22
-*.color13:      #e67e22
-
-! cyan
-*.color6:       #e67e22
-*.color14:      #e67e22
-
-! white
-*.color7:       #ffffff
-*.color15:      #ffffff
+! Black
+*.color0:      #1f1f1f
+*.color8:      #d6dbe5
+! Red
+*.color1:      #f81118
+*.color9:      #de352e
+! Green
+*.color2:      #2dc55e
+*.color10:     #1dd361
+! Yellow
+*.color3:      #ecba0f
+*.color11:     #f3bd09
+! Blue
+*.color4:      #2a84d2
+*.color12:     #1081d6
+! Magenta
+*.color5:      #4e5ab7
+*.color13:     #5350b9
+! Cyan
+*.color6:      #1081d6
+*.color14:     #0f7ddb
+! White
+*.color7:      #d6dbe5
+*.color15:     #ffffff
+! Bold, Italic, Underline
+*.colorBD:     #d6dbe5
 
 !#======================================================================
 !# Global
@@ -49,7 +43,7 @@
 !# (U)Xterm
 !#======================================================================
 
-XTerm.vt100.faceName: Fira Code:size=12:antialias=true
+XTerm.vt100.faceName: Fira Code:size=11:antialias=true
 XTerm.vt100.selectToClipboard: true
 XTerm.VT100.translations: #override \n\
   Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\

@@ -39,9 +39,8 @@ def get_data(endpoint, params):
 		)
 	)
 
-
 merge_requests = get_data('merge_requests', mr_params)
 issues = get_data('issues', issue_params)
 todos = get_data('todos', todo_params)
 
-print(' | '.join([issues, merge_requests, todos]))
+print('|'.join([issues, merge_requests, todos]))

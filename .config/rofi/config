@@ -15,13 +15,13 @@ rofi.color-urgent:      #2ecc72, #ecf0f1, #2ecc72, #00070e14, #1a1a1a
 rofi.separator-style:   solid
 rofi.fullscreen:        false
 rofi.padding:           0
-rofi.lines:             5
+rofi.lines:             3
 rofi.hide-scrollbar:    true
 rofi.line-margin:       0
 rofi.fake-transparency: true
 rofi.yoffset:           0
 rofi.xoffset:           0
-rofi.width:             600
+rofi.width:             400
 rofi.opacity:           100
-rofi.font:              Roboto 14
+rofi.font:              Fira Code 10
 rofi.theme:             /home/nikolai/.config/rofi/theme.rasi
