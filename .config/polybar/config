@@ -42,11 +42,14 @@ type = custom/script
 interval = 180
 exec = ~/.config/polybar/scripts/gitlab.py
 click-left = exec firefox https://gitlab.com
-label = " %output%"
-label-background = ${colors.foreground}
-label-foreground = ${colors.background}
-label-padding = 2
-label-margin = 0
+format-prefix = " "
+format-prefix-foreground = ${colors.yellow}
+format = <label>
+label = %output%
+format-background = ${colors.background}
+format-foreground = ${colors.foreground}
+format-padding = 2
+format-margin = 0
 
 [module/i3]
 type = internal/i3
@@ -89,22 +92,22 @@ full-at =  97
 
 format-charging = <label-charging>
 label-charging = " %percentage%%"
-format-charging-background = ${colors.foreground}
-format-charging-foreground = ${colors.background}
+format-charging-background = ${colors.background}
+format-charging-foreground = ${colors.foreground}
 format-charging-padding = 2
 format-charging-margin = 1
 
 format-full = <label-full>
 label-full = " %percentage%%"
-format-full-background = ${colors.foreground}
-format-full-foreground = ${colors.background}
+format-full-background = ${colors.background}
+format-full-foreground = ${colors.foreground}
 format-full-padding = 2
 format-full-margin = 0
 
 format-discharging = <label-discharging>
 label-discharging = " %percentage%%"
-format-discharging-background = ${colors.foreground}
-format-discharging-foreground = ${colors.background}
+format-discharging-background = ${colors.background}
+format-discharging-foreground = ${colors.foreground}
 format-discharging-padding = 2
 format-discharging-margin= 0
 
@@ -117,15 +120,15 @@ format-connected = <label-connected>
 label-connected = " %essid%"
 label-connected-padding = 2
 label-connected-margin = 0
-label-connected-background = ${colors.foreground}
-label-connected-foreground = ${colors.background}
+label-connected-background = ${colors.background}
+label-connected-foreground = ${colors.foreground}
 
 format-disconnected = <label-disconnected>
 label-disconnected = ""
 label-disconnected-padding = 2
 label-disconnected-margin = 0
-label-disconnected-background = ${colors.foreground}
-label-disconnected-foreground = ${colors.background}
+label-disconnected-background = ${colors.background}
+label-disconnected-foreground = ${colors.foreground}
 
 [module/memory]
 type = internal/memory
@@ -134,8 +137,8 @@ format = <label>
 label = " %gb_used%"
 label-padding = 2
 label-margin = 0
-label-foreground = ${colors.background}
-label-background = ${colors.foreground}
+label-foreground = ${colors.foreground}
+label-background = ${colors.background}
 
 [module/date]
 type = internal/date
@@ -143,8 +146,8 @@ label = " %date%|%time%"
 date = %d.%m
 time = %H:%M
 interval = 5
-label-background = ${colors.foreground}
-label-foreground = ${colors.background}
+label-background = ${colors.background}
+label-foreground = ${colors.foreground}
 label-padding = 2
 label-margin = 0
 
