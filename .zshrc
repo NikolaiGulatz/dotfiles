@@ -30,5 +30,12 @@ alias gpo='git push origin'
 alias night='redshift &> /dev/null &'
 alias day='killall redshift'
 
+alias reload-feh='feh --bg-scale ~/Images/Wallpapers/current'
+alias reload-polybar='killall polybar && ~/.bin/polybar.sh &>/dev/null'
+
+alias mdp2='xrandr --output eDP-1 --off --output DP-2 --auto && reload-polybar && reload-feh'
+alias mhdmi1='xrandr --output eDP-1 --off --output HDMI-1 --auto && reload-polybar && reload-feh'
+alias medp1='xrandr --output eDP-1 --auto --output DP-2 --off && reload-polybar && reload-feh'
+
 # https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
 alias config='/usr/bin/git --git-dir=/home/nikolai/.cfg/ --work-tree=/home/nikolai'
