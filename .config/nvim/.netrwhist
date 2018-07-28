@@ -1,8 +1,8 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/nikolai/.config'
-let g:netrw_dirhist_2='/home/nikolai/.config/nvim'
-let g:netrw_dirhist_3='/home/nikolai/.config/nvim/bundle'
+let g:netrw_dirhist_1='/home/nikolai/Coding/instaffo/Platform/Platform'
+let g:netrw_dirhist_2='/home/nikolai/.config'
+let g:netrw_dirhist_3='/home/nikolai/.config/nvim'
 let g:netrw_dirhist_4='/home/nikolai/.config/nvim/plugin'
-let g:netrw_dirhist_5='/home/nikolai'
-let g:netrw_dirhist_6='/home/nikolai/.config'
+let g:netrw_dirhist_5='/home/nikolai/Coding/instaffo/Platform/Platform'
+let g:netrw_dirhist_6='/home/nikolai'
