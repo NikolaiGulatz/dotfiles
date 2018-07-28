@@ -10,6 +10,8 @@ Currently running Arch on a Thinkpad X1 Carbon 6th Gen.
 - polybar
 - UXterm
 - zsh
+- nvim
+- vim-plug
 
 ## Utilities
 

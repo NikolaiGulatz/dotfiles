@@ -9,6 +9,7 @@ yesterday = date.today() - timedelta(1)
 
 activity_params = {
 	'after': yesterday.strftime('%Y-%m-%d'),
+        'per_page': 100,
 }
 
 auth = {

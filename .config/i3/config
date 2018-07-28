@@ -32,7 +32,7 @@ exec --no-startup-id dbus-launch compton --config ~/.config/compton/config &
 # User Key Bindings
 #=======================================================================
 
-bindsym $mod+Return exec xterm
+bindsym $mod+Return exec alacritty
 bindsym $mod+q kill
 bindsym Mod1+Tab workspace next
 bindsym $mod+d exec rofi -show run
