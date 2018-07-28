@@ -3,7 +3,19 @@ filetype off
 
 call plug#begin('~/.vim/plugged')
 
+" Searching
 Plug 'kien/ctrlp.vim'
+
+" Linting
+Plug 'w0rp/ale'
+
+" Git gutter
+Plug 'airblade/vim-gitgutter'
+
+" Status bar
+Plug 'vim-airline/vim-airline'
+
+" Color scheme
 Plug 'dracula/vim', { 'as': 'dracula' }
 
 call plug#end()
@@ -13,7 +25,7 @@ filetype plugin indent on
 set encoding=utf-8
 
 set backspace=indent,eol,start   " allow backspacing over everything in insert mode
-
+set updatetime=100
 set history=1000                 " keep 1000 lines of command line history
 set ruler                        " show the cursor position all the time
 set showcmd                      " display incomplete commands
