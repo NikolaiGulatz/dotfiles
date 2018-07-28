@@ -18,11 +18,21 @@ Plug 'vim-airline/vim-airline'
 " Color scheme
 Plug 'dracula/vim', { 'as': 'dracula' }
 
+" Improved syntax highlighting for react
+Plug 'mxw/vim-jsx'
+
+" Improved syntax highlighting for ES6
+Plug 'pangloss/vim-javascript'
+
+" Startscreen
+Plug 'mhinz/vim-startify'
+
 call plug#end()
 
 filetype plugin indent on
 
 set encoding=utf-8
+set termguicolors
 
 set backspace=indent,eol,start   " allow backspacing over everything in insert mode
 set updatetime=100

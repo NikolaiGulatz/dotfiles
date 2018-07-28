@@ -14,7 +14,7 @@ cyan = ${xrdb:color6}
 font-0 = "Font Awesome 5 Free:style=Regular:pixelsize=9;2"
 font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=9;2"
 font-2 = "Font Awesome 5 Brands:pixelsize=9;2"
-font-3 = Fira Code:size= 8;3
+font-3 = "Fira Code:pixelsize=11;3"
 
 monitor = ${env:MONITOR:eDP-1}
 
@@ -29,12 +29,12 @@ border-top-color = ${colors.transparency}
 padding-left = 0
 padding-right = 0
 border-left-size = 30
-border-right-size = 30
+border-right-size = 20
 border-bottom-size = 0
 border-top-size = 30
 
 modules-left = i3
-modules-center = title
+modules-center =
 modules-right = gitlab memory wifi date battery
 
 [module/gitlab]

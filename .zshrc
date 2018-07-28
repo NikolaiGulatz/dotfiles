@@ -11,10 +11,16 @@ antigen bundle extract
 antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle command-not-found
+antigen bundle shrink-path
 
 antigen theme agnoster
 
 antigen apply
+
+# Shrink file paths
+function prompt_dir() {
+  prompt_segment blue black "$(shrink_path -f)"
+}
 
 alias vim='nvim'
 
