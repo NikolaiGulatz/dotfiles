@@ -1,4 +1,4 @@
-export EDITOR="/usr/bin/subl"
+export EDITOR="/usr/bin/nvim"
 export PATH="$HOME/.rbenv/bin:$PATH"
 
 eval "$(rbenv init -)"
@@ -16,6 +16,8 @@ antigen theme agnoster
 
 antigen apply
 
+alias vim='nvim'
+
 # random aliases
 alias ezsh='$EDITOR ~/.zshrc'
 alias szsh='source ~/.zshrc'
@@ -31,7 +33,7 @@ alias night='redshift &> /dev/null &'
 alias day='killall redshift'
 
 alias reload-feh='feh --bg-scale ~/Images/Wallpapers/current'
-alias reload-polybar='killall polybar && ~/.bin/polybar.sh &>/dev/null'
+alias reload-polybar='killall polybar; ~/.bin/polybar.sh &>/dev/null'
 
 alias mdp2='xrandr --output eDP-1 --off --output DP-2 --auto && reload-polybar && reload-feh'
 alias mhdmi1='xrandr --output eDP-1 --off --output HDMI-1 --auto && reload-polybar && reload-feh'

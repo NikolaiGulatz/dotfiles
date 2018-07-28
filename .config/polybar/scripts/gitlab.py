@@ -2,25 +2,13 @@
 
 import os
 import requests
+from datetime import date, timedelta
 
 access_token = os.environ.get('GITLAB_PRIVATE_KEY', '')
+yesterday = date.today() - timedelta(1)
 
-mr_params = {
-	'scope': 'assigned-to-me',
-	'state': 'opened',
-	'view': 'simple',
-	'per_page': 20
-}
-
-issue_params = {
-	'scope': 'assigned-to-me',
-	'state': 'opened',
-	'per_page': 40
-}
-
-todo_params = {
-	'state': 'pending',
-	'per_page': '40'
+activity_params = {
+	'after': yesterday.strftime('%Y-%m-%d'),
 }
 
 auth = {
@@ -31,16 +19,14 @@ def get_data(endpoint, params):
 	params.update(auth)
 
 	return str(
-		len(
+                len(
 			requests.get(
 				f'https://gitlab.com/api/v4/{endpoint}',
 				params = params
 			).json()
-		)
+                )
 	)
 
-merge_requests = get_data('merge_requests', mr_params)
-issues = get_data('issues', issue_params)
-todos = get_data('todos', todo_params)
+activities = get_data('events', activity_params)
 
-print('|'.join([issues, merge_requests, todos]))
+print(activities)
