@@ -82,6 +82,9 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+vnoremap < <gv
+vnoremap > >gv
+
 set showbreak=↪\
 set listchars=tab:→\ ,nbsp:␣,trail:•,extends:⟩,precedes:⟨
 set list!
@@ -90,6 +93,3 @@ set list!
 :autocmd BufWritePre [:;\\']*
 \   try | echoerr 'Forbidden file name: ' . expand('<afile>') | endtry
 
-" global undo directory that is persisted after file closure
-set undodir=~/.vim/undodir
-set undofile

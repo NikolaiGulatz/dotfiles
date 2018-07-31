@@ -1,5 +1,6 @@
 let g:ale_linters = {
 \  'ruby': ['rubocop'],
+\  'javascript': ['eslint'],
 \}
 
 let g:ale_open_list = 0
