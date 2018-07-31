@@ -1,1 +1,1 @@
-config rm -rf .config/nvim/.netrwhist
+.config/nvim/.netrwhist
