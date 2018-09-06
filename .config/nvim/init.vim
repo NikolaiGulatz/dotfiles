@@ -27,6 +27,9 @@ Plug 'pangloss/vim-javascript'
 " Startscreen
 Plug 'mhinz/vim-startify'
 
+" Filetree
+Plug 'scrooloose/nerdtree'
+
 call plug#end()
 
 filetype plugin indent on
