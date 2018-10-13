@@ -1,9 +1,11 @@
 export EDITOR="/usr/bin/nvim"
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:/home/nikolai/.local/bin:$PATH"
+
+export TERM="xterm-256color"
 
 eval "$(rbenv init -)"
 
-source $HOME/.antigen.zsh
+source $HOME/antigen.zsh
 
 antigen use oh-my-zsh
 
@@ -27,7 +29,7 @@ alias vim='nvim'
 # random aliases
 alias ezsh='$EDITOR ~/.zshrc'
 alias szsh='source ~/.zshrc'
-alias sodomize='cowsay -f sodomize'
+alias sodomize='cowsay -f sodomized'
 alias pw='password-generator -l 24 -c'
 
 # git aliases

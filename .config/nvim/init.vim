@@ -12,6 +12,9 @@ Plug 'w0rp/ale'
 " Git gutter
 Plug 'airblade/vim-gitgutter'
 
+" Git stuff
+Plug 'tpope/vim-fugitive'
+
 " Status bar
 Plug 'vim-airline/vim-airline'
 
@@ -23,9 +26,6 @@ Plug 'mxw/vim-jsx'
 
 " Improved syntax highlighting for ES6
 Plug 'pangloss/vim-javascript'
-
-" Startscreen
-Plug 'mhinz/vim-startify'
 
 " Filetree
 Plug 'scrooloose/nerdtree'
