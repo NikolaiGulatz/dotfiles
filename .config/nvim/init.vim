@@ -5,6 +5,8 @@ call plug#begin('~/.vim/plugged')
 
 " Searching
 Plug 'kien/ctrlp.vim'
+Plug 'mileszs/ack.vim'
+Plug 'eugen0329/vim-esearch'
 
 " Linting
 Plug 'w0rp/ale'
@@ -29,6 +31,9 @@ Plug 'pangloss/vim-javascript'
 
 " Improved netrw
 Plug 'tpope/vim-vinegar'
+
+" Markdown mode
+Plug 'plasticboy/vim-markdown'
 
 " Syntax highlighting for slim templates
 Plug 'slim-template/vim-slim'
