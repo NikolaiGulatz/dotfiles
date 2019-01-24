@@ -27,8 +27,11 @@ Plug 'mxw/vim-jsx'
 " Improved syntax highlighting for ES6
 Plug 'pangloss/vim-javascript'
 
-" Filetree
-Plug 'scrooloose/nerdtree'
+" Improved netrw
+Plug 'tpope/vim-vinegar'
+
+" Syntax highlighting for slim templates
+Plug 'slim-template/vim-slim'
 
 call plug#end()
 
