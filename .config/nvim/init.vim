@@ -38,6 +38,9 @@ Plug 'plasticboy/vim-markdown'
 " Syntax highlighting for slim templates
 Plug 'slim-template/vim-slim'
 
+" Automatic python formatting
+Plug 'python/black'
+
 call plug#end()
 
 filetype plugin indent on
@@ -80,6 +83,9 @@ set clipboard=unnamedplus
 
 " remove useless whitespaces
 autocmd BufWritePre * %s/\s\+$//e
+
+" Automatically format python files
+autocmd BufWritePre *.py execute ':Black'
 
 " map capital commands to lower case
 command WQ wq

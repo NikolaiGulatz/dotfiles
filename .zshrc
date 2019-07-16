@@ -1,11 +1,16 @@
 export EDITOR="/usr/bin/nvim"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:/home/nikolai/.local/bin:$PATH"
 
 export TERM="xterm-256color"
 
-eval "$(rbenv init -)"
-
 source $HOME/antigen.zsh
+source $HOME/.profile
+source $HOME/.poetry/env
+
+eval "$(pyenv init -)"
+eval "$(rbenv init -)"
 
 antigen use oh-my-zsh
 
@@ -43,9 +48,8 @@ alias day='killall redshift'
 alias reload-feh='feh --bg-scale ~/Images/Wallpapers/current'
 alias reload-polybar='killall polybar; ~/.bin/polybar.sh &>/dev/null'
 
-alias mdp2='xrandr --output eDP-1 --off --output DP-2 --auto && reload-polybar && reload-feh'
-alias mhdmi1='xrandr --output eDP-1 --off --output HDMI-1 --auto && reload-polybar && reload-feh'
-alias medp1='xrandr --output eDP-1 --auto --output DP-2 --off && reload-polybar && reload-feh'
+alias mdesk='~/.bin/desk.sh && reload-polybar && reload-feh'
+alias mlaptop='xrandr --output eDP-1 --auto --output DP-2 --off --output HDMI-1 --off && reload-polybar && reload-feh'
 
 # https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
 alias config='/usr/bin/git --git-dir=/home/nikolai/.cfg/ --work-tree=/home/nikolai'
