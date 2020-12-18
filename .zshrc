@@ -1,7 +1,10 @@
 export EDITOR="/usr/bin/nvim"
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-export PATH="$HOME/.rbenv/bin:/home/nikolai/.local/bin:$PATH"
+
+export PATH="$PATH:$PYENV_ROOT/bin"
+export PATH="$PATH:$HOME/.rbenv/bin:/home/nikolai/.local/bin"
+export PATH="$PATH:$HOME/.linkerd2/bin"
+export PATH="$PATH:$HOME/.tfenv/bin"
 
 export TERM="xterm-256color"
 
@@ -11,6 +14,9 @@ source $HOME/.poetry/env
 
 eval "$(pyenv init -)"
 eval "$(rbenv init -)"
+
+export NVM_DIR="$HOME/.config"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 antigen use oh-my-zsh
 

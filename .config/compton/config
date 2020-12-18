@@ -8,7 +8,7 @@ clear-shadow = true;		  # Zero the part of the shadow's mask behind the window (
 shadow-radius = 5;		    # The blur radius for shadows. (default 12)
 shadow-offset-x = -5;		  # The left offset for shadows. (default -15)
 shadow-offset-y = -5;		  # The top offset for shadows. (default -15)
-shadow-opacity = 0.5;		# The translucency for shadows. (default .75)
+shadow-opacity = 0.75;		# The translucency for shadows. (default .75)
 
 shadow-exclude = [
   "class_g = 'Rofi'"
@@ -19,15 +19,12 @@ shadow-exclude = [
 #======================================================================
 
 menu-opacity = 1.0;				          # The opacity for menus. (default 1.0)
-inactive-opacity = 0.90;			      # Opacity of inactive windows. (0.1 - 1.0)
+inactive-opacity = 0.95;			      # Opacity of inactive windows. (0.1 - 1.0)
 active-opacity = 1.0;               # Opacity of active windows. (0.1 - 1.0)
 frame-opacity = 1.0;			          # Opacity of window titlebars and borders. (0.1 - 1.0)
 inactive-opacity-override = false;	# Inactive opacity set by 'inactive-opacity' overrides value of _NET_WM_OPACITY.
 
-opacity-rule = [
-  "99:class_g = 'Firefox'",
-  "99:class_g = 'Rofi'"
-];
+opacity-rule = [];
 
 #======================================================================
 # Fading
@@ -37,7 +34,7 @@ fading = true;			          # Fade windows during opacity changes.
 fade-delta = 10;		          # The time between steps in a fade in milliseconds. (default 10).
 fade-in-step = 0.03;		      # Opacity change between steps while fading in. (default 0.028).
 fade-out-step = 0.03;		      # Opacity change between steps while fading out. (default 0.03).
-# no-fading-openclose = true;	# Fade windows in/out when opening/closing.
+no-fading-openclose = false;	# Fade windows in/out when opening/closing.
 
 #======================================================================
 # Other
@@ -49,6 +46,5 @@ mark-ovredir-focused = false;
 detect-rounded-corners = true;
 backend = "glx";
 glx-no-stencil = true;
-paint-on-overlay = true;
 vsync = "opengl"
 refresh-rate = 144;

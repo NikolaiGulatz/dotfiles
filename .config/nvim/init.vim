@@ -41,6 +41,9 @@ Plug 'slim-template/vim-slim'
 " Automatic python formatting
 Plug 'python/black'
 
+" Automatic other formatting
+Plug 'prettier/vim-prettier'
+
 call plug#end()
 
 filetype plugin indent on

@@ -38,7 +38,7 @@ bindsym Mod1+Tab workspace next
 bindsym $mod+d exec rofi -show run
 bindsym $mod+s exec rofi -show ssh
 bindsym $mod+w exec rofi -show window
-bindsym $mod+i exec deepin-screenshot
+bindsym $mod+i exec flameshot gui
 bindsym $mod+x exec ~/.bin/lock.sh
 bindsym $mod+m exec amixer -c 1 set Master toggle
 
