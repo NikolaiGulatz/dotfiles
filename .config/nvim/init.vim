@@ -42,7 +42,7 @@ Plug 'slim-template/vim-slim'
 Plug 'python/black'
 
 " Automatic other formatting
-Plug 'prettier/vim-prettier'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 call plug#end()
 
@@ -109,7 +109,11 @@ set showbreak=↪\
 set listchars=tab:→\ ,nbsp:␣,trail:•,extends:⟩,precedes:⟨
 set list!
 
+
+let g:prettier#autoformat_require_pragma = 0
+
 " prevent accidentally saving files in a typo with ':w/' or similar
 :autocmd BufWritePre [:;\\']*
 \   try | echoerr 'Forbidden file name: ' . expand('<afile>') | endtry
 
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.less,*.json,*.graphql,*.md,*.vue,*.yaml,*.yml,*.html,*.scss,*.css PrettierAsync
